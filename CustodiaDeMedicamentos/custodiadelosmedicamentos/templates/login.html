@@ -1,0 +1,28 @@
+{% include 'head.html' %}
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+    <div class="card shadow-lg" style="width: 22rem;">
+        <div class="card-body">
+            <h3 class="card-title text-center mb-4">Inicio de Sesión</h3>
+            <form action="/login" method="POST">
+                <div class="mb-3">
+                    <label for="usuario" class="form-label">Usuario</label>
+                    <input type="text" class="form-control" id="usuario" name="usuario" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Ingresar</button>
+            </form>
+            <div class="text-center mt-3">
+                <a href="/registro">Registrar un nuevo usuario</a>
+            </div>
+        </div>
+        <div class="card-footer text-center text-muted">
+            © 2024 Sistema Médico
+        </div>
+    </div>
+</div>
+
+{% include 'footer.html' %}
